@@ -12,7 +12,7 @@ public class MemberServiceTest {
         Member member = new Member(1L, "memberA", Grade.VIP);
         //when
         memberService.join(member);
-        Member member1 =memberService.findMember(2L);
+        Member member1 =memberService.findMember(1L);
 
         //then
         Assertions.assertThat(member).isEqualTo(member1);
